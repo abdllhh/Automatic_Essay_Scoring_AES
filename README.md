@@ -7,8 +7,10 @@ The dataset consists of 12,977 essays from the Hewlett Foundation's Automated Es
 Text: The raw essay content.
 Score: The quality score assigned to the essay
 
+#### dataset after feature extraction uploaded to Huggingface, can be accessed from: https://huggingface.co/datasets/abdlh/Dataset_Automatic_Essay_Scoring_Essay-EssayScore_and_24_textual_features/blob/main/Updated_Processed_Data.csv ####
+
 ## Preprocessing ##
-### as done in the new_dataset_from_old_dataset.ipynb file ###
+#### as done in the 'new_dataset_from_old_dataset.ipynb' file ####
 
 Data Cleaning:
 Removed special characters, redundant spaces, and non-alphanumeric content.
@@ -31,7 +33,7 @@ Embeddings:
 Generated semantic embeddings using SpaCy's pre-trained language model for essay vectorization.
 
 ## Models and Training ##
-### as in using_models.ipynb and new_dataset_from_old_dataset.ipynb ###
+#### as in 'using_models.ipynb' and 'new_dataset_from_old_dataset.ipynb' ####
 Models:
 Linear Regression:
 Used as a baseline model with the extracted features.
@@ -56,6 +58,6 @@ QWK (Quadratic Weighted Kappa)
 
 Findings:
 Models were evaluated on an 80%-20% train-test split.
-### A baseline LSTM (as trained in lstm_file.py) trained directly on essay text with fewer features outperformed others but violated the 30-feature constraint. ###
+### A baseline LSTM (as trained in 'lstm_file.py') trained directly on essay text with fewer features outperformed others but violated the 30-feature constraint. ###
 Rest of the models trained on all 24 features did not perform well on poor essays, though all gave great essays higher marks 
 
