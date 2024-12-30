@@ -22,7 +22,7 @@ Stopword Removal and Lemmatization:
 Removed common stopwords.
 Used SpaCy for lemmatization.
 
-Feature Extraction: Extracted 30 key features such as:
+Feature Extraction: Extracted 20+ key features such as:
 Linguistic Features: Word count, sentence count, average word length.
 Readability Scores: Flesch Reading Ease, Gunning Fog Index.
 Semantic Features: Sentiment analysis scores using TextBlob.
@@ -58,6 +58,6 @@ QWK (Quadratic Weighted Kappa)
 
 Findings:
 Models were evaluated on an 80%-20% train-test split.
-### A baseline LSTM (as trained in 'lstm_file.py') trained directly on essay text with fewer features outperformed others but violated the 30-feature constraint. ###
-Rest of the models trained on all 24 features did not perform well on poor essays, though all gave great essays higher marks 
+### A baseline LSTM (as trained in 'lstm_file.py') trained directly on essay text with fewer features outperformed others but violated the 20+ features constraint. ###
+Rest of the models trained on all 20+ features did not perform well on poor essays, though all gave great essays higher marks 
 
